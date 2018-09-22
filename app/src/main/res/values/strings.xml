@@ -1,10 +1,18 @@
 <resources>
     <string name="app_name">News App Stage 2</string>
-    <string name="no_news">No news found!\All servers are busy\nCheck after sometime</string>
-    <string name="no_internet_connection">No internet connection!\nTry Again\nAfter Checking internet connection\nReopen the app</string>
+    <string name="no_news">It\'s us not you. We couldn\'t get you any news :(</string>
+    <string name="no_internet_connection">No Internet! Try Later</string>
     <string name="logo">logo</string>
     <string name="settings_title">News Settings</string>
     <string name="settings_menu_item">Settings</string>
+
+    <string name="section">section</string>
+    <string name="orderBy">order-by</string>
+    <string name="pageSize">page-size</string>
+    <string name="showTags">show-tags</string>
+    <string name="contributor">contributor</string>
+    <string name="apiKey">api-key</string>
+    <string name="key">a6ce801a-77a8-44a1-a14d-7c3eacf86d30</string>
 
 
     <string name="settings_min_news_label">Minimum News</string>
@@ -90,5 +98,6 @@
 
     <string name="settings_section_world_news_label">World News</string>
     <string name="settings_section_world_news_value" translatable="false">world news</string>
+
 
 </resources>
