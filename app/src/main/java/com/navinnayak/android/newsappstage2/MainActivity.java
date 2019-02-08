@@ -20,6 +20,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -125,6 +126,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
     public void onLoadFinished(Loader<List<News>> loader, List<News> news) {
         swipe.setRefreshing(false);
 
+
         // Hide loading indicator because the data has been loaded
         View loadingIndicator = findViewById(R.id.loading_indicator);
         loadingIndicator.setVisibility(View.GONE);
@@ -171,6 +173,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
     @Override
     public void onLoaderReset(Loader<List<News>> loader) {
         mAdapter.clear();
+
     }
 
     @Override
@@ -193,5 +196,9 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
     @Override
     public void onRefresh() {
         getSupportLoaderManager().restartLoader(LOADER_ID, null, this);
+        Toast.makeText(this, "List Refreshed", Toast.LENGTH_SHORT).show();
+
+        //  swipe.setRefreshing(false); //Refresh view Close
     }
+
 }
